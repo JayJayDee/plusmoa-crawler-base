@@ -1,5 +1,32 @@
 {
-  "compilerOptions": {
-    "typeRoots" : ["./node_modules/@types", "./typings"]
-  }
+  "target": "esnext",
+  "module": "esnext",
+  "strict": true,
+  "importHelpers": true,
+  "moduleResolution": "node",
+  "experimentalDecorators": true,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "strictPropertyInitialization": false,
+  "sourceMap": true,      
+  "baseUrl": ".",
+  "types": [
+    "node"
+  ],
+  "paths": {
+    "@/*": [
+      "*",
+      "*.d.ts"
+    ]
+  },
+  "lib": [
+    "esnext",
+    "scripthost"
+  ],
+  "include": [
+    "**/*.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
